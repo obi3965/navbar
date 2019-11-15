@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>navbar</title>
+  <meta name="viewport" content="width=device-wdith,initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+ <header>
+    <div class="logo">
+        <a href="">Logo</a>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Portfolio</a></li>
+            <li><a href="">Client</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="trigger-main">
+         <a href="#" class="hamBurger">
+             <span class="one"></span>
+             <span class="two"></span>
+         </a>
+    </div>
+ </header>
+
+ <section class="banner">
+ </section>
+
+ <script>
+    const hamBurger=document.querySelector(".hamBurger");
+    const nav=document.querySelector("nav");
+
+      hamBurger.addEventListener("click",function() {
+         nav.classList.toggle("open");
+         hamBurger.classList.toggle("close")
+      })
+ </script>
+
+</body>
+</html>
